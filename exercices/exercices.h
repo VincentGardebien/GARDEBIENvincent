@@ -9,6 +9,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+typedef struct object_item_s {
+    char *key;
+    char *value;
+} object_item;
+
 char *token_string(char **str);
 bool token_bool(char **str, bool *value);
 bool is_char(char **str, char c);
